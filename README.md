@@ -1110,7 +1110,7 @@ plt.show()
 => 良いフィッティング結果を得ることができた。簡単なデータではあったが、スコアを決定する要因の全体の9割以上を説明することができている。私の重視する家賃、大学までの近さがともに入っているためだと考えられる。ただ、これが私の家選びの傾向を完全に理解した、ということにはならないと思います（「考えたこと」章を参照ください）
 - P>|t|	は、isParking_2以外、統計的に有意である（有意水準を5%とした場合）ことがわかります。
 => isParkingは個人的にどちらでも良いので、私がこの練習用データを作るときは、ほとんど見ずに回答していました。そのため、この限られたデータではうまくフィッティングできなかったのではないかと考えられます。もしより多くの似た考えをもつ回答者がいれば、このｐ値もより小さく（有意になり）、かつ重みが小さな値に収束していくはずです。P>|t|の欄の値が大きいものばかりだと、たまたま重みが大きくなっただけの偶然であることが否定できず、コンジョイント分析から多くの示唆を得ることができないため、今回はよい練習データになっていてよかったです。
-- 多重共線性について：Cond. No.(Condition number)を確認します。statsmodelsのドキュメンテーションによると、  
+- **多重共線性**について：Cond. No.(Condition number)を確認します。statsmodelsのドキュメンテーションによると、  
 
 > One way to assess multicollinearity is to compute the condition number. Values over 20 are worrisome (see Greene 4.9).  
 
@@ -1137,4 +1137,3 @@ https://www.statsmodels.org/stable/examples/notebooks/generated/ols.html
 https://mba.globis.ac.jp/about_mba/glossary/detail-11804.html  
 Pythonでコンジョイント分析に挑戦  
 https://wannko5296.hatenablog.com/entry/conjoint_analysis_in_python  
-
